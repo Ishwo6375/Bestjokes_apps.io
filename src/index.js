@@ -1,9 +1,14 @@
 //  <div id="joke" class="my-joke"> Awesome Joke is loading... </div>
 //       <button id="joke-Btn" class="btn">NEXT JOKE</button>
   const jokeUrl = ' https://icanhazdadjoke.com/'
+  const configObj = {
+      headers: {
+          Accept : "application/json"
+      }
+  }
 
  const getJokes = () => {
-     fetch(jokeUrl)
+     fetch(jokeUrl, configObj)
      .then((res) => {
        console.log(res.json());  
      }).catch((error) =>{
