@@ -7,3 +7,10 @@
     max-width: 100%;
     width: 800px;
 } 
+
+h3{
+    margin: 0;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
