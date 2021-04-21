@@ -9,9 +9,10 @@
 
  const getJokes = () => {
      fetch(jokeUrl, configObj)
-     .then((res) => {
-       console.log(res.json());  
-     }).catch((error) =>{
+     .then((res) =>  res.json())
+      .then((data) => {
+        jokes.innerHTML = data.joke;
+      }) .catch((error) =>{
          console.log(error);
      })
     
