@@ -1,33 +1,30 @@
+  //create Html element to DOM
   const createLikeButton = () =>{
   const newDiv = document.createElement('div');
   newDiv.id = "respond"
   const header = document.createElement('h3')
   const likeBtn = document.createElement('button');
-  
   const likeBtn2 = document.createElement('button');
-
-  header.innerText = "Do you like this?"
+ 
+  
+  header.innerText = "*** React To The Jokes *** " 
   header.id = 'heading1'
   likeBtn.innerHTML = "Like"
+  likeBtn.id = "button-1"
   likeBtn2.innerHTML = "Dislike"
-
-//   body.newDiv.appendChild(header);
-//   body.newDiv.appendChild(likeBtn);
-//   newDiv.appendChild(likeBtn2);
-//   return newDiv;
+  likeBtn2.id = "button-2"
+  
   document.body.appendChild(newDiv);
    newDiv.appendChild(header);
    newDiv.appendChild(likeBtn);
    newDiv.appendChild(likeBtn2);
-
+   
    return newDiv;
 
   }
-
-
    createLikeButton();
-//  <div id="joke" class="my-joke"> Awesome Joke is loading... </div>
-//       <button id="joke-Btn" class="btn">NEXT JOKE</button>
+
+//fetching data from public api//
   const jokeUrl = ' https://icanhazdadjoke.com/'
   const configObj = {
       headers: {
@@ -45,9 +42,33 @@
      })
     
  }
+
+ //add EventListener to next joke button//
  const jokes = document.getElementById('joke');
  const jokeBtn = document.getElementById('joke-Btn');
  jokeBtn.addEventListener('click', getJokes);
+  
  getJokes();
 
+ 
+//add Event listener to like and dislike button//
+let newdiv = document.getElementById('respond')
+  let reactJokes = document.getElementById('button-1')
+  let reactJokes1 = document.getElementById('button-2');
+   
+
+  reactJokes.addEventListener('click', ()=>{
+     let paraOne = document.createElement('p');
+     paraOne.innerHTML = "You Liked the Joke!!&#128077;"
+     newdiv.appendChild(paraOne);
+      return newdiv = "";
+    })
+
+    reactJokes1.addEventListener('click', ()=>{
+     let paraTwo = document.createElement('p');
+     paraTwo.innerHTML = "You Disliked the Joke!!&#128078;"
+    newdiv.appendChild(paraTwo);
+      return newdiv = "";
+    })
+     
  
