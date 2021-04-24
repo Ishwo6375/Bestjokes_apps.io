@@ -8,6 +8,7 @@
     image.src = './image/myImage.jpg'
     image.attributes = "Myimage"
     projectName.innerHTML = "Best Joke App <br> Phase  1 Project"
+    projectName.style.color = "cornsilk"
     document.body.appendChild(divElement);
     divElement.appendChild(image);
     divElement.appendChild(projectName);
@@ -65,12 +66,12 @@
  const jokes = document.getElementById('joke');
  const jokeBtn = document.getElementById('joke-Btn');
  jokeBtn.addEventListener('click', getJokes);
-  
- getJokes();
 
+ getJokes();
  
+  
 //add Event listener to like and dislike button//
-let newdiv = document.getElementById('respond')
+  let newdiv = document.getElementById('respond')
   let reactJokes = document.getElementById('button-1')
   let reactJokes1 = document.getElementById('button-2');
    
