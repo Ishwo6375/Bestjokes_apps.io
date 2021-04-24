@@ -1,3 +1,21 @@
+  //create App info to Dom//
+  const createAppInfo = ()=>{
+    const divElement = document.createElement('div');
+    divElement.id = 'info'
+    const image = document.createElement('img');
+    const projectName = document.createElement('p');
+
+    image.src = './image/myImage.jpg'
+    image.attributes = "Myimage"
+    projectName.innerHTML = "Best Joke App <br> Phase  1 Project"
+    document.body.appendChild(divElement);
+    divElement.appendChild(image);
+    divElement.appendChild(projectName);
+    return divElement;
+
+  }
+   createAppInfo();
+  
   //create Html element to DOM
   const createLikeButton = () =>{
   const newDiv = document.createElement('div');
