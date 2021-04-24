@@ -1,6 +1,7 @@
 body{
   background-image: url(./image/Funny-Background-Pictures.jpg);
   background-size: 200%;
+  
 }
 
 
@@ -109,5 +110,16 @@ p{
      margin-left: 30px;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      font-weight: 900;
+     color: antiquewhite;
+     font-weight: 500;
      
+}
+
+#click-button{
+    background-color: blueviolet;
+    border-radius: 6px;
+    color: cornsilk;
+    padding: 10px;
+    margin-left: 30px;
+    box-shadow: 0 6px 16px blueviolet;
 }

@@ -1,22 +1,35 @@
-  //create App info to Dom//
-  const createAppInfo = ()=>{
-    const divElement = document.createElement('div');
-    divElement.id = 'info'
-    const image = document.createElement('img');
-    const projectName = document.createElement('p');
-
-    image.src = './image/myImage.jpg'
-    image.attributes = "Myimage"
-    projectName.innerHTML = "Best Joke App <br> Phase  1 Project"
-    projectName.style.color = "cornsilk"
-    document.body.appendChild(divElement);
-    divElement.appendChild(image);
-    divElement.appendChild(projectName);
-    return divElement;
-
-  }
-   createAppInfo();
   
+   // create App Info button//
+   const addAppInfo = ()=>{
+     const divElement1 = document.createElement('div');
+     divElement1.id = 'info'
+     const newBtn = document.createElement('button');
+     newBtn.innerHTML = 'App Info'
+     newBtn.id = "click-button"
+     document.body.appendChild(divElement1);
+     divElement1.appendChild(newBtn)
+     return divElement1;
+     
+   }
+   addAppInfo();
+
+
+  //add Event Listener to App info button//
+    let divElement2 = document.getElementById('info');
+    let addEvnet = document.getElementById('click-button');
+    
+     addEvnet.addEventListener('click', ()=>{
+     let image = document.createElement('img')
+     image.src = './image/myImage.jpg'
+     let para3 = document.createElement('p')
+     para3.innerHTML = 'Best Joke App <br> Phase 1 Project'
+     divElement2.appendChild(image);
+     divElement2.appendChild(para3);
+     return divElement2 = "";
+     
+     })
+
+    
   //create Html element to DOM
   const createLikeButton = () =>{
   const newDiv = document.createElement('div');
@@ -68,6 +81,7 @@
  jokeBtn.addEventListener('click', getJokes);
 
  getJokes();
+
  
   
 //add Event listener to like and dislike button//
