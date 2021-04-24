@@ -64,7 +64,8 @@ h2:hover{
     font-size: 30px;
     font-weight: 900;
    text-align: center;
-   margin-top: -110px;
+   margin-top: -150px;
+   margin-left: 900px;
 }
 
 #button-1{
@@ -105,7 +106,7 @@ img{
 }
 
 p{
-    font-size: 20px;
+    font-size: 15px;
      margin-top: 10px;
      margin-left: 30px;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -113,6 +114,17 @@ p{
      color: antiquewhite;
      font-weight: 500;
      
+}
+
+
+h4{
+  font-size: 20px;
+     margin-top: 1px;
+     margin-left: 30px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: 900;
+     color: antiquewhite;
+     font-weight: 500;  
 }
 
 #click-button{

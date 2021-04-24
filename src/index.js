@@ -1,5 +1,31 @@
+//fetching data from public api//
+  const jokeUrl = ' https://icanhazdadjoke.com/'
+  const configObj = {
+      headers: {
+          Accept : "application/json"
+      }
+  }
+ 
+ const getJokes = () => {
+     fetch(jokeUrl, configObj)
+     .then((res) =>  res.json())
+      .then((data) => {
+        jokes.innerHTML = data.joke;
+      }) .catch((error) =>{
+         console.log(error);
+     })
+    
+ }
   
-   // create App Info button//
+   //add EventListener to next joke button//
+   const jokes = document.getElementById('joke');
+   const jokeBtn = document.getElementById('joke-Btn');
+   jokeBtn.addEventListener('click', getJokes);
+   
+   getJokes();
+
+
+   // create App Info button to DOM//
    const addAppInfo = ()=>{
      const divElement1 = document.createElement('div');
      divElement1.id = 'info'
@@ -11,19 +37,24 @@
      return divElement1;
      
    }
+   
    addAppInfo();
 
 
   //add Event Listener to App info button//
     let divElement2 = document.getElementById('info');
-    let addEvnet = document.getElementById('click-button');
-    
-     addEvnet.addEventListener('click', ()=>{
+    let addEvent = document.getElementById('click-button');
+
+     addEvent.addEventListener('click', ()=>{
      let image = document.createElement('img')
      image.src = './image/myImage.jpg'
+     image.attributes = "my-image-pic"
+     let heading = document.createElement('h4')
+     heading.innerHTML = 'Best Joke App <br> Phase 1 Project'
      let para3 = document.createElement('p')
-     para3.innerHTML = 'Best Joke App <br> Phase 1 Project'
+     para3.innerHTML = "Created By: ISHWOR PRAJAPATI"
      divElement2.appendChild(image);
+     divElement2.appendChild(heading);
      divElement2.appendChild(para3);
      return divElement2 = "";
      
@@ -56,31 +87,7 @@
   }
    createLikeButton();
 
-//fetching data from public api//
-  const jokeUrl = ' https://icanhazdadjoke.com/'
-  const configObj = {
-      headers: {
-          Accept : "application/json"
-      }
-  }
- 
- const getJokes = () => {
-     fetch(jokeUrl, configObj)
-     .then((res) =>  res.json())
-      .then((data) => {
-        jokes.innerHTML = data.joke;
-      }) .catch((error) =>{
-         console.log(error);
-     })
-    
- }
 
- //add EventListener to next joke button//
- const jokes = document.getElementById('joke');
- const jokeBtn = document.getElementById('joke-Btn');
- jokeBtn.addEventListener('click', getJokes);
-
- getJokes();
 
  
   
