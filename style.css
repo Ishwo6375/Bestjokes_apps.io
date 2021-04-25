@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
 body{
   background-image: url(./image/Funny-Background-Pictures.jpg);
   background-size: 200%;
@@ -75,16 +80,19 @@ h2:hover{
     box-shadow: 0 6px 16px blueviolet;
      color: white;
       text-align: center;
+      padding: 10px;
+     
 }
 
 
 #button-2{
      background-color:rgb(16, 105, 238);
-    border-radius: 9px;
-    box-shadow: 0 6px 16px blueviolet;
+     border-radius: 9px;
+     box-shadow: 0 6px 16px blueviolet;
      color: white;
-      text-align: center;
-
+     text-align: center;
+     padding: 10px;
+ 
 }
 
 #button-2:hover{
@@ -135,3 +143,4 @@ h4{
     margin-left: 30px;
     box-shadow: 0 6px 16px blueviolet;
 }
+
