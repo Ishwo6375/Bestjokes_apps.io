@@ -67,7 +67,7 @@
      
    }
    
-   addAppInfo();
+    addAppInfo();
 
 
     //add Event Listener to App info button//
@@ -118,23 +118,34 @@
    createLikeButton();
 
 //add Event listener to like and dislike button//
-  let newdiv = document.getElementById('respond')
-  let reactJokes = document.getElementById('button-1')
+  
   let reactJokes1 = document.getElementById('button-2');
-   
+  let reactJokes = document.getElementById('button-1')
 
+   
   reactJokes.addEventListener('click', ()=>{
-  let paraOne = document.createElement('p');
+  let newdiv = document.getElementById('respond')
+  paraOne = document.createElement('p');
   paraOne.innerHTML = "You Liked the Joke!!&#128077;"
+  paraOne.id = "like-paragraph"
   newdiv.appendChild(paraOne);
-  return newdiv = "";
+  let paraTwo = document.getElementById('Dislike-paragraph');
+   paraTwo.innerHTML = "";
+   
   })
+
 
   reactJokes1.addEventListener('click', ()=>{
+  let newdiv = document.getElementById('respond')
   let paraTwo = document.createElement('p');
   paraTwo.innerHTML = "You Disliked the Joke!!&#128078;"
+  paraTwo.id = "Dislike-paragraph";
   newdiv.appendChild(paraTwo);
-  return newdiv = "";
+  let paraOne = document.getElementById('like-paragraph');
+  paraOne.innerHTML = "";
+  
   })
+
+  
      
  

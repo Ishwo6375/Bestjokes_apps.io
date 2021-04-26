@@ -9,8 +9,6 @@ body{
   
 }
 
-
-
 .container{
     background-image: url(./image/fun.jpg);
     background-size: 950px;
@@ -77,8 +75,8 @@ h2:hover{
     background-color:rgb(16, 105, 238);
     border-radius: 6px;
     margin: 0px 50px;
-    box-shadow: 0 6px 16px blueviolet;
-     color: white;
+      box-shadow: 0 6px 16px blueviolet;
+      color: white;
       text-align: center;
       padding: 10px;
      
@@ -97,20 +95,23 @@ h2:hover{
 
 #button-2:hover{
     font-size: 20px;
+    color: black;
+    background-color: cornflowerblue;
     
 }
 
 #button-1:hover{
    font-size: 20px;
-  
+   color: black;
+    background-color: cornflowerblue;
 }
 
 img{
     width: 100px;
     height:100px;
     border-radius: 50px;
-   margin-top: -500px;
-   margin-left: 30px;
+    margin-top: -500px;
+    margin-left: 30px;
 }
 
 p{
