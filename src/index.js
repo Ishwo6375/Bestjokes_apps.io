@@ -60,7 +60,7 @@ const addAppInfo = () => {
   newBtn.id = "click-button";
   document.body.appendChild(divElement1);
   divElement1.appendChild(newBtn);
-  return divElement1;
+ 
 };
 
 addAppInfo();
@@ -80,7 +80,8 @@ addEvent.addEventListener("click", () => {
   divElement2.appendChild(image);
   divElement2.appendChild(heading);
   divElement2.appendChild(para3);
-  return divElement2 = "";
+   divElement2 = "";
+  
 });
 
 //create Html element to DOM
@@ -114,18 +115,15 @@ let reactJokes1 = document.getElementById("button-2");
 let reactJokes = document.getElementById("button-1");
 
 reactJokes.addEventListener("click", () => {
-  let newdiv = document.getElementById("respond");
   reactJokes.innerHTML = "<b>LIKED</b> &#128154;";
   reactJokes.style.background = "red";
   reactJokes1.innerHTML = "Dislike";
-  reactJokes1.style.background = "blueviolet"
-
+  reactJokes1.style.background = "blueviolet";
 });
 
 reactJokes1.addEventListener("click", () => {
-  let newdiv = document.getElementById("respond");
-  reactJokes1.innerHTML = "<b>DISLIKED</> &#128148;";
-  reactJokes1.style.background = "rgb(107, 100, 100)"
+  reactJokes1.innerHTML = "<b>DISLIKED<b/> &#128148;";
+  reactJokes1.style.background = "rgb(107, 100, 100)";
   reactJokes.innerHTML = "Like";
   reactJokes.style.background = " blueviolet";
 });

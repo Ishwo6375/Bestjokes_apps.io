@@ -28,8 +28,8 @@
 
 [x]Set up styling
 
-[]Test and Polish
+[x]Test and Polish
 
 []Host on netlify
-    []create netlify account through GitHub
-    []create website using project repo
+    [x]create netlify account through GitHub
+    [x]create website using project repo
